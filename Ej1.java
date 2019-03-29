@@ -15,17 +15,23 @@ public class Ej1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
+		try {
 		for(int i=0;i<=1000000000;i++) {
+			System.out.println("Digita la base");
 		int a = scanner.nextInt();
 		if(a==0)
 			break;
+		System.out.println("Digite el exponente");
 		int b = scanner.nextInt();
 		
 		potencia(a, b);
 		
 		}
-		
+	} catch(Exception e) {
+		System.out.println("Digitaste algo diferente a un número");
 	}
-
+	}
+	
 
 }
+

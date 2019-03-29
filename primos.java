@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class primos {
+public class is_prime {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -8,15 +8,20 @@ int a = scanner.nextInt();
 primo(a);
 	}
 	public static void primo(int x) {
+		try {
 		int contCero=0;
 		for(int i=1;i<=x;i++) {
 			if(x%i==0)
 				contCero++;
 		}
 		if(contCero==2)
-			System.out.println("Es primo");
+			System.out.println("-1");
 		else
-			System.out.println("No es primo");
-	}
+			System.out.println("1");
+		} catch(Exception e) {
+			System.out.println("No se puede determinar");
+			
+		}
+		}
 
 }

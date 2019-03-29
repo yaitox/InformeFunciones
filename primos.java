@@ -5,6 +5,8 @@ public class is_prime {
 		// TODO Auto-generated method stub
 Scanner scanner = new Scanner(System.in);
 int a = scanner.nextInt();
+		if(a<=0)
+			break;
 primo(a);
 	}
 	public static void primo(int x) {

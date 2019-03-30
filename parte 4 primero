@@ -1,0 +1,34 @@
+package xd;
+import java.util.Scanner;
+public class perfecto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner scanner = new Scanner(System.in);
+		int num=scanner.nextInt();
+		perfect(num);
+	}
+
+	public static void perfect(int x) {
+		int contCero=0;
+		int contDivisores=0;
+		for(int i=1;i<=x;i++) {
+			if(x%i==0) {
+				contCero++;
+				contDivisores=contDivisores+i;
+			}
+		}
+		if(contCero==2) {
+			System.out.println("No es perfecto");
+		}
+		if(contCero>2 && contDivisores-x==x) {
+			System.out.println("Es perfecto");
+		}
+			if(contCero>2 && contDivisores-x!=x) {
+				System.out.println("No es perfecto");
+			}
+		
+
+	}
+	
+}
